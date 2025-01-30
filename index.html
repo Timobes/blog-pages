@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+    <body>
+        <header class="header">
+            <div class="header__block">
+                <div class="logo">
+                    <img src="image/header/logo.svg" alt="">
+                </div>
+                
+                <div class="burger" id="burger">
+                    &#9776;
+                </div>
+
+              
+            </div>
+            
+            <div class="buttons__container" id="buttons">
+                <nav class="nav" id="nav">
+                    <a href="" class="link">Link One</a>
+                    <a href="" class="link">Link Two</a>
+                    <a href="" class="link">Link Three</a>
+                    <div class="link" id="link">Link Four</div>
+                </nav>  
+
+                <button class="btn">Button</button>
+                <button class="btn active-btn">Button</button>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="section__title">Blog</div>
+            <div class="section__heading">Describe what your blog is <br> about</div>
+            <div class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+        </section>
+
+        <div class="filter">
+            <div class="filter__elem">View all</div>
+            <div class="filter__elem">Category one</div>
+            <div class="filter__elem">Category two</div>
+            <div class="filter__elem">Category three</div>
+            <div class="filter__elem">Category four</div>
+        </div>
+
+        <div class="form-create" class="">
+            <form action="" class="form" id="form">
+                <input type="file" class="form-inp" name="post-img" accept="image/svg">
+                <input type="text" placeholder="Категория" class="form-inp" name="category-name">
+                <input type="text" placeholder="Название" class="form-inp" name="post-name">
+                <input type="text" placeholder="Описание" class="form-inp" name="post-desc">
+                <input type="file" name="author-avatar" accept="image/svg">
+                <input type="text" placeholder="Имя автора" class="form-inp" name="author-name">
+                <input type="date" class="form-inp" name="post-date">
+                <input type="text" placeholder="Время на чтение" class="form-inp" name="time-to-read">
+                <button class="submit" id="sub">Отправить</button>
+            </form>
+        </div>
+
+        <div class="blog">
+            <div class="post__container" id="post__container">
+          
+            </div>
+        </div>
+
+        <script src="script/main.js"></script>
+    </body>
+</html>
