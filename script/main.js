@@ -1,22 +1,11 @@
-// {
-//     "post-img": "",
-//     "category-name": "",
-//     "post-name": "",
-//     "post-desc": "",
-//     "author-avatar": "",
-//     "author-name": "",
-//     "post-date": "",
-//     "time-to-read": ""
-// },
+const post__container = document.getElementById('post__container');
+const sub = document.getElementById('sub');
+const form = document.getElementById('form');
 
-const post__container = document.getElementById('post__container')
-const sub = document.getElementById('sub')
-const form = document.getElementById('form')
-
-let data = JSON.parse(localStorage.getItem('data')) || []
+let data = JSON.parse(localStorage.getItem('data')) || [];
 
 function loadInStorage() {
-    localStorage.setItem('data', JSON.stringify(data))
+    localStorage.setItem('data', JSON.stringify(data));
 }
 
 function load() {
@@ -47,33 +36,52 @@ function load() {
 
                 <button onclick="del(${el.id})">Удалить пост</button>
             </div>
-        ` 
+        `; 
     });
 }
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const formData = new FormData(form)
+    const formData = new FormData(form);
     
     const postImg = formData.get('post-img');
-    const authorImg = formData.get('author-avatar')
-    
-    data.push({
-        "id": data.length + 1,
-        "post-img": postImg,
-        "category-name": formData.get('category-name'),
-        "post-name": formData.get('post-name'),
-        "post-name": formData.get('post-name'),
-        "author-avatar": authorImg,
-        "author-name": formData.get('author-name'),
-        "post-date": formData.get('post-date'),
-        "time-to-read": formData.get('time-to-read')
-    })
+    const authorImg = formData.get('author-avatar');
 
-    load()
-    loadInStorage()
-})
+    const readerPostImg = new FileReader();
+    const readerAuthorImg = new FileReader();
+
+    readerPostImg.onload = function () {
+        const postImgUrl = readerPostImg.result;
+
+        readerAuthorImg.onload = function () {
+            const authorImgUrl = readerAuthorImg.result;
+
+            data.push({
+                "id": data.length + 1,
+                "post-img": postImgUrl,
+                "category-name": formData.get('category-name'),
+                "post-name": formData.get('post-name'),
+                "post-desc": formData.get('post-desc'),
+                "author-avatar": authorImgUrl,
+                "author-name": formData.get('author-name'),
+                "post-date": formData.get('post-date'),
+                "time-to-read": formData.get('time-to-read')
+            });
+
+            load();
+            loadInStorage();
+        };
+
+        if (authorImg) {
+            readerAuthorImg.readAsDataURL(authorImg);
+        }
+    };
+
+    if (postImg) {
+        readerPostImg.readAsDataURL(postImg);
+    }
+});
 
 function del(id) {
     data = data.filter(el => el.id !== id);
@@ -81,5 +89,5 @@ function del(id) {
     loadInStorage(); 
 }
 
+document.addEventListener('DOMContentLoaded', load);
 
-document.addEventListener('DOMContentLoaded', load)

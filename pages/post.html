@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/post.css">
+    <link rel="stylesheet" href="../style/media.css">
+</head>
+    <body>
+        <header class="header">
+            <div class="header__block">
+                <div class="logo">
+                    <img src="image/header/logo.svg" alt="">
+                </div>
+                <div class="burger" id="burger">
+                    &#9776;
+                </div>
+            </div>
+            
+            <div class="buttons__container" id="buttons">
+                <nav class="nav" id="nav">
+                    <a href="" class="link">Link One</a>
+                    <a href="" class="link">Link Two</a>
+                    <a href="" class="link">Link Three</a>
+                    <div class="link" id="link">Link Four</div>
+                </nav>  
+
+                <button class="btn">Button</button>
+                <button class="btn active-btn">Button</button>
+            </div>
+        </header>
+
+        <div class="form-post-create" class="">
+            <form action="" class="form" id="form-post">
+                <textarea name="" id="form-textarea" class="form-textarea">
+
+                </textarea>
+                <button class="submit" id="sub">Отправить</button>
+            </form>
+        </div>
+
+        <div class="post__page">
+            <div class="post__header">
+                <div class="breadcrumb">
+                    Blog > Category
+                </div>
+    
+                <div class="post__heading">Blog title heading will go here</div>
+                
+                <div class="post__author__and__link">
+                    <div class="author__container">
+                        <img src="../image/post/Image2.svg" alt="" class="author__avatar">
+                        <div style="display: grid; row-gap: 3px;">
+                            <div class="author__name">Full name</div>
+                            <div style="display: flex; column-gap: 8px;">
+                                <div class="post__date">11 Jan 2022</div>
+                                •
+                                <div class="post__time-to-read">5 min read</div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="social__link">
+                        <div class="social__item">
+                            <img src="../image/social/Vector.svg" alt="" >
+                        </div>
+
+                        <div class="social__item">
+                            <img src="../image/social/Vector2.svg" alt="" >
+                        </div>
+
+                        <div class="social__item">
+                            <img src="../image/social/Vector3.svg" alt="" >
+                        </div>
+
+                        <div class="social__item">
+                            <img src="../image/social/Vector4.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post__hero">
+                <img src="../image/post/Image-hero.svg" alt="">
+            </div>
+
+            <div class="post__content" id="post__content">
+                <!-- <div class="post__introduction">Introduction</div>
+
+                <div class="post__text">
+                    Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.
+                </div>
+
+                <div class="post__text">
+                    Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat.
+                </div>
+
+                <img src="../image/post/Image-post.svg" alt="" class="post__img">
+                <div class="img__caption">Image caption goes here</div>
+
+                <div class="post-h6">
+                    Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.
+                </div>
+
+                <div class="post__text">
+                    Collaboratively deploy intuitive partnerships whereas customized e-markets. Energistically maintain performance based strategic theme areas whereas just in time methodologies. Phosfluorescently drive functionalized intellectual capital and.
+                </div>
+
+                <div class="caption">
+                    "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus."
+                </div>
+
+                <div class="post__text">
+                    Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.
+                </div>
+
+                <div class="post-h4">Conclusion</div>
+
+                <div class="post__text">
+                    Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.
+                </div>
+
+                <div class="post__text">
+                    Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis lobortis at sit dictum eget nibh tortor commodo cursus.
+                </div>
+
+                <div class="post__text">
+                    Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam elementum urna nisi aliquet erat dolor enim. Ornare id morbi eget ipsum. Aliquam senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio consequat scelerisque et, nunc tortor. Nulla adipiscing erat a erat. Condimentum lorem posuere gravida enim posuere cursus diam.
+                </div> -->
+            </div>
+
+
+            <div class="share">
+                <div style="width: 100%;">
+                    Share this post
+                </div>
+
+                <div class="social__link">
+                    <div class="social__item">
+                        <img src="../image/social/Vector.svg" alt="" >
+                    </div>
+
+                    <div class="social__item">
+                        <img src="../image/social/Vector2.svg" alt="" >
+                    </div>
+
+                    <div class="social__item">
+                        <img src="../image/social/Vector3.svg" alt="" >
+                    </div>
+
+                    <div class="social__item">
+                        <img src="../image/social/Vector4.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="post__tags">
+                    <div class="tags__elem">Tag one</div>
+                    <div class="tags__elem">Tag two</div>
+                    <div class="tags__elem">Tag three</div>
+                    <div class="tags__elem">Tag four</div>
+                </div>
+            </div>
+
+            <div class="x-line"></div>
+            <div class="author__post__container">
+                <div class="author__container">
+                    <img src="../image/post/Image2.svg" alt="" class="author__avatar">
+                    <div style="display: grid; row-gap: 3px;">
+                        <div class="author__name">Full name</div>
+                        <div style="display: flex; column-gap: 8px;">
+                            <div class="post__date">11 Jan 2022</div>
+                            •
+                            <div class="post__time-to-read">5 min read</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="subscribe">
+
+        </div>
+
+        <div class="related__posts">
+            <div class="post__container" id="post__container">
+          
+            </div>
+        </div>
+
+        <footer class="footer">
+
+        </footer>
+
+        <script src="../script/post.js"></script>
+    </body>
+</html>

@@ -1,0 +1,165 @@
+:root {
+    --post-size: 768px;
+}
+
+.form-post-create {
+    width: 720px;
+    margin: auto;
+}
+
+.form-textarea {
+    width: 720px;
+    min-height: 500px;
+
+    border: 1px solid;
+}
+
+.post__page {
+    width: 1312px;
+
+    margin: 112px auto auto auto;
+}
+
+.post__header {
+    width: var(--post-size);
+    margin: auto;
+}
+
+.breadcrumb {
+}
+.post__heading {
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-bottom: 48px;
+}
+
+.post__author__and__link {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+}
+
+.social__link {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+
+    margin-top: 16px;
+}
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    height: 24px;
+    
+    padding: 3px 0 3px 0;
+
+    border-radius: 360px;
+
+    background-color: #F4F4F4;
+}
+
+.social__item:hover {
+    cursor: pointer;
+}
+
+.social__item > img {
+
+}
+
+.post__hero {
+    width: 100%;
+
+    margin: auto auto 112px auto;
+}
+
+.post__content {
+    width: var(--post-size);
+
+    margin: auto;
+}
+.post__introduction {
+    font-size: 40px;
+    font-weight: 700;
+}
+.post__text {
+    font-size: 16px;
+
+    margin-bottom: 16px;
+}
+.post__img {
+    width: 100%;
+}
+.img__caption {
+    margin-bottom: 48px;
+}
+.post-h6 {
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+.caption {
+    font-size: 20px;
+    font-style: italic;
+
+    border-left: 2px solid;
+    padding: 0 0 0 24px;
+
+    margin-bottom: 32px;
+}
+.post-h4 {
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+.share {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+
+    width: var(--post-size);
+
+    margin: 64px auto 48px auto;
+}
+.post__tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: 8px;
+}
+
+.tags__elem {
+    background-color: #F4F4F4;
+
+    padding: 4px 8px 4px 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tags__elem:hover {
+    cursor: pointer;
+}
+
+.x-line {
+    width: var(--post-size);
+
+    margin: auto auto 48px auto;
+
+    border: 1px solid ;
+}
+
+.author__post__container {
+    width: 768px;
+    margin: auto;
+}
